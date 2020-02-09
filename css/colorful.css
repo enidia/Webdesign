@@ -1,0 +1,50 @@
+﻿@charset "utf-8";
+.bluered {
+    background-image: linear-gradient(to top,#06F,#ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.purplebule {
+    background-image: linear-gradient(to right,#F6F,#06F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.yellowgreen {
+    background-image: linear-gradient(to right,#ffd800,#4cff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.redgrey {
+    background-image: linear-gradient(to right,#ff006e,#808080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.marcon {
+    background-image: linear-gradient(to right,#38d4b7,#8de24a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.formal {
+    background-image: linear-gradient(to left,#052f84,#880ba7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.greyblue {
+    background-image: linear-gradient(to left,#151417,#0b013d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wrong {
+    background-image: linear-gradient(to left,#ff0000,#ff1f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

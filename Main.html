@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>ICM3</title>
+    <link rel="stylesheet" type="text/css" href="css/ulstyle.css" /><!--列表的样式-->
+    <link rel="stylesheet" type="text/css" href="css/colorful.css" /><!--使用渐变效果的字体-->
+    <link rel="stylesheet" type="text/css" href="css/loading.css" />
+	<link rel="stylesheet" type="text/css" href="css/mainload.css"/>
+  <style>
+     a{
+         font-size:17px;
+         text-align:left;
+     }
+    #paragraph_mid{
+    text-align:center;
+    color:aliceblue;
+    font-size:25px;
+    text-shadow: 0.1em 0.1em #333;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    }
+      .midmain {
+          width: 71%;
+          text-align:center;
+          margin:auto;/*调节标题画面*/
+          height:100%;
+      }
+      .adj {
+          width:76%;
+          height:100%;
+      }
+      .adjtable {
+          width: 90%;
+          text-align:left;
+          margin: auto;/*调节table的表格*/
+          height: 1500px;
+      }
+      *{ margin:0; padding:0}
+      body, html{ height:100%; width:100%;}
+      #frametable{ height:40px; background:#ddd; border-bottom:2px solid #999;}
+      #frametable .left {
+          width: 150px;
+          border-right: 2px solid #999;/*iframe的自适应高度*/
+          background: #ddd;
+          height: 100%;
+      }
+      footer {
+	    padding: 10px 0;
+	    background-color:cornsilk;
+	    position: relative;/* 这可以使 IE6 hasLayout 以正确方式进行清除 */
+    	clear: both; /* 此清除属性强制 .container 了解列的结束位置以及包含列的位置 */
+        text-align:center;
+        font-size:25px;
+        color:#000000;
+        text-shadow: 0.1em 0.1em azure;
+        opacity:0.2;
+        margin-top: -25px;
+    	position:fixed;
+    	bottom: 0px;
+        width:100%;
+      }    
+      footer:hover{
+              -webkit-animation-name: change; /*动画名称*/
+             -webkit-animation-duration: 0.6s; /*动画持续时间*/
+             -webkit-animation-iteration-count: 1; /*动画次数 infinite 为无限 否则就是具体次数*/
+              -webkit-animation-delay: 0s; /*延迟时间*/
+              opacity:1;
+      }
+      @-webkit-keyframes change {
+    0% {
+        opacity: 0.5; /*初始状态 透明度为0*/
+    }
+    50% {
+        opacity: 0.75; /*初始状态 透明度为0*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+    #area-render {
+      width: 100%;
+      height: 200%;
+      position:center;
+      margin:0 auto;
+      width:100%;
+    }
+    li{
+        font-size:20px;
+    }
+  </style>
+</head>
+<body>
+<script src="javascript/loading.js"></script>
+<div id="area-render">
+<script type="text/javascript"  src="javascript/canvas-nest.umd.js"></script>
+<div class="into">
+    <table style="width:90%;height:218px;margin:auto" border="1">
+    <tr>
+      <td id="paragraph_mid">
+          <!--background-attachment:fixed 加上可以使图片在移动页面时移动内部图像，不移动标题-->
+          <p></p>
+        <p><strong>2019  International Conference of Multi-scale </strong>
+            <br />
+          <strong>Modeling  and Simulation of Materials (ICM3 )</strong></p>
+        <p><strong>July  1-5, 2019</strong><br>
+          <strong>Ningbo,  China</strong></p>
+          <p></p>
+      </td>
+    </tr>
+</table>
+    <table class="adjtable">
+        <tr style="text-align:right">
+            <td style="text-align:left;vertical-align:top;">
+    <ol class="rounded-list" style="align-self:auto">
+      <li><a href="route/Main.html" target="main">About the Conference</a></li>
+      <li><a href="route/Organizers.html" target="main">Organizers Committee</a></li>
+        <li><a href="route/InvitedSpeaker.html" target="main">Invited Speakers</a></li>
+        <li><a href="route/Schedule.html" target="main"> Schedule</a></li>
+        <li><a href="route/Registration.html" target="main">Registration</a></li>
+        <li><a href="route/UsefulInfo.html" target="main">Useful Information</a></li>
+        <li><a href="route/Sponsor.html" target="main">Sponsors</a></li>
+        <li><a href="route/Contact.html" target="main">Contact Us</a></li>
+    </ol>
+            </td>
+            <td class="adj" style="vertical-align:top;text-align:right">          
+                 <iframe id="iframe" name="main" src="route/Main.html"  onscroll="yes" style="overflow:visible;width:100%;height:100%;border:0;text-align:left;"></iframe>
+            </td>
+        </tr>
+    </table>
+      <footer>
+    <p>版权所有：宁波大学物理科学与技术学院</p>
+    <address style="font-style:normal">
+    中国 宁波 邮编：3105211 电话：+86-574-87600725 传真：+86-574-87600744
+    </address>
+  </footer>
+  </div>
+  </div>
+  <script type="text/javascript">
+      var cn = new CanvasNest(document.getElementById('area-render'), {
+          color: '0,153,255',//颜色
+          count: 200,//数量
+          opacity: 1,//透明度0到1
+          zIndex: 1,//图层，1表示在表面         
+      });
+</script>
+</body>
+</html>

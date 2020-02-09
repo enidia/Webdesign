@@ -1,0 +1,38 @@
+﻿h1, h2, h3, h4 {
+    text-align: center;
+    color: blue;
+    font-style: oblique;
+}
+li {
+    font-style: oblique;
+    font-size: 25px;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    color: #000000;
+}
+p {
+    font-size: 20px;
+    color: black;
+    font-style: oblique;
+    margin-top: 0; /* 删除上边距可以解决边距会超出其包含的块的问题。剩余的下边距可以使块与后面的任何元素保持一定距离。 */
+    padding-right: 5px;
+    padding-left: 25px; /* 向块内的元素侧边（而不是块元素自身）添加填充可避免使用任何方框模型数学。此外，也可将具有侧边填充的嵌套块用作替代方法。 */
+    color: #000000;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+section, article {
+    color: #000000;
+}
+html, body {
+    height: 90%;
+}
+a:link {
+    color: blue;
+    text-decoration: none;
+    border-bottom: 2px #008cb6;
+    font-style: oblique;
+    font-size: 20px;
+}
+.mid{
+    font-size:25px;
+    text-align:center;
+}
